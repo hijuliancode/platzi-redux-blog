@@ -10,28 +10,17 @@ class App extends Component {
   }
   async componentDidMount() {
     const resp = await axios.get('https://jsonplaceholder.typicode.com/users')
-    console.log(resp)
+    console.log(resp.data)
     this.setState({
-      users: [
-        {
-          name: 'Meraki',
-          email: 'hi@meraki.com',
-          link: 'meraki.com',
-        },
-        {
-          name: 'Julian',
-          email: 'hi@julian.com',
-          link: 'julian.com',
-        },
-      ]
+      users: resp.data
     })
   }
   setRows = () => (
     this.state.users.map(user => (
-       <tr>
+       <tr key={user.id}>
          <td>{user.name}</td>
          <td>{user.email}</td>
-         <td>{user.link}</td>
+         <td>{user.website}</td>
        </tr>
     ))
   )
