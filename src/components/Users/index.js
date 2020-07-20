@@ -26,7 +26,7 @@ class Users  extends Component {
   )
   render () {
     return (
-      <div className="margin">
+      <div>
         <table>
           <thead>
             <tr>

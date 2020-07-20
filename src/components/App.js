@@ -8,8 +8,10 @@ import Menu from './Menu'
 const App =  () => (
   <BrowserRouter>
     <Menu />
-    <Route exact path="/" component={Users} / >
-    <Route exact path="/tasks" component={Tasks} / >
+    <div className="container">
+      <Route exact path="/" component={Users} / >
+      <Route exact path="/tasks" component={Tasks} / >
+    </div>
   </BrowserRouter>
 )
 

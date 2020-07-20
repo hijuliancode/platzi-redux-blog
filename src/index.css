@@ -12,10 +12,7 @@ code {
     monospace;
 }
 
-.margin {
-  margin: 100px; 
-}
-.margin table {
+table {
   width: 100%;
 }
 
