@@ -18,3 +18,18 @@ code {
 .margin table {
   width: 100%;
 }
+
+#menu {
+  background-color: #253a46;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 20px;
+}
+#menu a {
+  color: #ffffff;
+  margin-right: 12px;
+  text-decoration: none;
+}
+#menu a:hover {
+  text-decoration: underline;
+}
