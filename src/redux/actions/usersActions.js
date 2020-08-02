@@ -1,7 +1,10 @@
+import axios from 'axios'
 
-export const getUsers = () => (dispatch) => {
+export const getUsers = () => async (dispatch) => {
+  const resp = await axios.get('https://jsonplaceholder.typicode.com/users')
+
   dispatch({
     type: 'get_users',
-    payload: [1, 2, 3]
+    payload: resp.data
   })
 }
